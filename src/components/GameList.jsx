@@ -25,7 +25,8 @@ const GameList = (props) =>{
             const URL = `https://api.rawg.io/api/games?key=${process.env.REACT_APP_API_KEY}&page=${page}`
             const response = await axios.get(URL)
             setGames(response.data.results)
-            setLoading(true); 
+            setLoading(true);
+            window.scrollTo(0,0);  
         }
         fetchGame();
     },[page])
