@@ -1,0 +1,140 @@
+header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 9rem;
+    position:fixed;
+    z-index: 1;
+    width: 100%;
+    font-family: 'Anek-latin', sans-serif;
+    background-color: black;
+}
+.logo{
+    width: 150px;
+}
+.nav-list {
+    display: flex;
+    gap: 2rem;
+}
+.ul-list-item:hover{
+    border-bottom: 1px solid white;
+}
+.check-btn{
+    float: right;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+
+
+
+
+/* MEDIA */ 
+
+
+
+/* MOBILE DEVICES */ 
+@media screen and (min-width:320px) and (max-width: 480px){
+   header{
+     padding: .5rem;
+   }
+   .nav-list{
+    flex-direction: column;
+    gap: .5rem;
+   }
+   .ul-list-item{
+    margin-top: 1rem;
+   }
+   .ul-list-item:hover{
+    border: none;
+   }
+
+    .check-btn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(2, 22, 22);
+        top: 9vh;
+        left: -100%; 
+        transition: all .5s ;
+        text-align: center;
+    }
+    nav ul li {
+        display: block;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+/* iPADS, TABLETS */ 
+@media screen and (min-width:481px) and (max-width: 768px){
+
+    header{
+        padding: .5rem;
+      }
+      .nav-list{
+       flex-direction: column;
+       gap: .5rem;
+      }
+      .ul-list-item{
+       margin-top: 1rem;
+      }
+      .ul-list-item:hover{
+       border: none;
+      }
+   
+
+    .check-btn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(2, 22, 22);
+        top: 9vh;
+        left: -100%; 
+        transition: all .5s ;
+        text-align: center;
+    }
+    nav ul li {
+        display: block;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+/* SMALL SCREENS, LAPTOPS */
+@media screen and (min-width:769px) and (max-width: 1024px){
+    header{
+        padding: .5rem;
+      }
+      .nav-list{
+       gap:1rem;
+      }
+   
+     
+   
+}
+
+/* DESKTOPS, LARGE SCREENS */ 
+@media screen and (min-width:1025px) and (max-width: 1200px) {
+    header{
+        padding: .5rem;
+      }
+      .nav-list{
+       gap:1rem;
+      }
+   
+}
+
+

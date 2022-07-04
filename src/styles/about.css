@@ -1,0 +1,28 @@
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin-top: 7rem;
+    gap: 2rem;
+    color: white;
+    margin: auto;
+    font-family: 'Anek Latin', sans-serif;
+}
+   
+.about-image{
+    width: 150px;
+    border-radius: 50%;
+}
+.github-image{
+    width: 20px;
+    filter: invert(100%) sepia(57%) saturate(0%) hue-rotate(163deg) brightness(111%) contrast(101%);
+}
+
+.about-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
