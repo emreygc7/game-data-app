@@ -31,7 +31,10 @@
 
 /* MOBILE DEVICES */ 
 @media screen and (min-width:320px) and (max-width: 480px){
+    .about-container{
+        gap: 1rem;
+    }
     .about-image{
         width: 100px;
     }
-}
+} 
